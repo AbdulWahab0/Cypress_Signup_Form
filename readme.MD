@@ -1,21 +1,77 @@
-#### To create new cypress project
 
-```shell script
-yarn init 
-yarn add cypress --dev
-yarn run cypress open
-```
+<h1 align="center">Auotomation SignUp form using Cypress  </h1>
+ <p align="center">
+ <img height="50px" src="https://miro.medium.com/max/7200/1*Jkb_tsMBOvL6wQ8bzldu8Q.png" />
+  <img height="50px" src="https://cdn.iconscout.com/icon/free/png-256/mocha-1-1175012.png" /> 
+  <img height="50px" src="https://brandslogos.com/wp-content/uploads/thumbs/cucumber-logo-vector.svg" />
+ </p>
 
-## To run tests in specific folder
-```shell
-yarn 
-yarn start:local:infrastucture
-```
+This is a task to Automate [https://app.gush.pro/bookpay/joinus](https://app.gush.pro/bookpay/joinus) website using Cypress and Cucumber with Mochawesome report, Please see below for the Test Case that are automated 
 
-## Flow
-```
-1. Update infratsructure
-2. Github actions for infrastructure - releases the npm version
-3. Github Actions - Re-release all the other apps with the new infrastructure version - main, workflows, teams,
-4. Run infrastructure tests - in folder infratsructure
-```
+
+<h1 align="center">Cypress Automation Demo  </h1>
+
+<p align="center"> 
+  <kbd>
+  	<a href="#" target="_blank">
+		<img src="Project_Demo.gif" width="1128"></img>
+	</a>
+  </kbd>
+</p>
+
+
+
+## Run Locally 🚀
+
+- git clone : git@github.com:AbdulWahab0/Cypress_Signup_Form.git
+- cd Cypress_Signup_Form
+- npm install
+- npm start
+
+Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gmail.com)
+
+## Technology used:
+
+ - Cypress 
+ - Cucumber
+ - Mochawesome
+ - Jenkins
+
+
+
+## Sections 
+✔️ Automate End to End Buy Order functionality\
+✔️ Verify that 'Add to Wishlist' only works after login.\
+✔️ Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
+
+
+## Concepts Implemented
+- End to End automation tetsing using cypress
+- Page Object Model 
+- Behavior Driven Development
+- Cucmber.js Framework 
+-  Mochawesome report
+- Development:  Github,
+- Cypress-cucumber-preprocesso
+
+
+## Sections 
+✔️ Multiple Cucumber Html Reports\
+✔️ Cypress Test Runner with Gherkin Syntax and Cucmber.Js\
+✔️ Integrate the cypress with Jenkins build \
+✔️ Cypress Command Line Test Results
+
+</p>
+
+
+
+## Contributors ✨
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AbdulWahab0"><br /><sub><b>Abdul Wahab</b></sub></a><br /><a href="https://github.com/AbdulWahab0" title="Code">💻</a> <a href="https://github.com/AbdulWahab0" title="Documentation">📖</a> <a href="https://github.com/AbdulWahab0" title="Design">🎨</a> <a href="https://github.com/AbdulWahab0" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+
+ 
+
