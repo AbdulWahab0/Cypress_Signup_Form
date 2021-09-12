@@ -14,7 +14,7 @@ This is a task to Automate [https://app.gush.pro/bookpay/joinus](https://app.gus
 <p align="center"> 
   <kbd>
   	<a href="#" target="_blank">
-		<img src="Project_Demo.gif" width="1128"></img>
+		<img src="demo.png" width="1128"></img>
 	</a>
   </kbd>
 </p>
@@ -40,9 +40,7 @@ Let me know if you have any questions. [Email Abdul Wahab ](mailto:wahab3060h@gm
 
 
 ## Sections 
-✔️ Automate End to End Buy Order functionality\
-✔️ Verify that 'Add to Wishlist' only works after login.\
-✔️ Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
+✔️ Automate Signup form with all fileds\
 
 
 ## Concepts Implemented
