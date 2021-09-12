@@ -1,0 +1,38 @@
+{
+  "name": "Cypress",
+  "version": "1.0.0",
+  "description": "E2E Testing",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "index.js",
+  "author": "Saul Frank",
+  "devDependencies": {
+    "cypress": "^6.2.0",
+    "cypress-cucumber-preprocessor": "^4.1.4",
+    "cypress-file-upload": "^5.0.0"
+  },
+  "scripts": {
+    "start:local": "cypress open --env configFile=local -config-file=cypress.local.json",
+    "chromeTest": "npm run test -- --browser chrome",
+    "test:electronTest": "cypress run --headless --browser electron",
+    "report:final_report": "node cucumber-html-report.js",
+    "run:local": "cypress run --env configFile=local --config-file=cypress.local.json",
+    "run:stage:worker": "cypress run --env configFile=stage --config-file=cypress.stage.json --spec cypress/integration/worker/**/*.js --record",
+    "run:stage:client": "cypress run --env configFile=stage --config-file=cypress.stage.json --spec cypress/integration/client/**/*.js --record"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "cypress-xpath": "^1.6.1",
+    "faker": "^4.1.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "whatwg-fetch": "^3.2.0"
+  }
+}

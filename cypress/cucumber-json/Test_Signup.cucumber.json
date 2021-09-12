@@ -1,0 +1,361 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Automate End to End Signup functionality for Gush WebApp.",
+    "line": 2,
+    "id": "automate-end-to-end-signup-functionality-for-gush-webapp.",
+    "tags": [
+      {
+        "name": "@ActivateSegment",
+        "line": 1
+      }
+    ],
+    "uri": "Test_Signup.feature",
+    "elements": [
+      {
+        "id": "automate-end-to-end-signup-functionality-for-gush-webapp.;verify-mandatory-fields-for-signup-form",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify mandatory fields for signup form",
+        "tags": [
+          {
+            "name": "@ActivateSegment",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user  is on signnup page",
+            "result": {
+              "status": "passed",
+              "duration": 894000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user click on save button",
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user is able to view error for validation",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-signup-functionality-for-gush-webapp.;verify-signup-user-that-already-exist",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify Signup user that already exist",
+        "tags": [
+          {
+            "name": "@ActivateSegment",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "the user open signup page",
+            "result": {
+              "status": "passed",
+              "duration": 857000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "country",
+                      "",
+                      "Firstname",
+                      "Surname",
+                      "",
+                      "Email",
+                      "",
+                      "confirm_email",
+                      "",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "United Kingdom",
+                      "",
+                      "test",
+                      "test111",
+                      "",
+                      "GusAppss@gmail.com",
+                      "",
+                      "GusAppss@gmail.com",
+                      "",
+                      "14FollowUp!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user type in",
+            "result": {
+              "status": "passed",
+              "duration": 10879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User is able to view the validation for user already exits",
+            "result": {
+              "status": "passed",
+              "duration": 950000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-signup-functionality-for-gush-webapp.;verfiy-email-and-confirm-email-does-not-match-validation",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verfiy email and confirm email does not match validation",
+        "tags": [
+          {
+            "name": "@ActivateSegment",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "the user open signup page",
+            "result": {
+              "status": "passed",
+              "duration": 730000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "country",
+                      "",
+                      "Firstname",
+                      "Surname",
+                      "",
+                      "Email",
+                      "",
+                      "confirm_email",
+                      "",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "United Kingdom",
+                      "",
+                      "test",
+                      "test1111",
+                      "",
+                      "testEmail@gmail.com",
+                      "",
+                      "testEmail@gmail.com",
+                      "",
+                      "14FollowUp!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user type wrong email for email and confirm email fields",
+            "result": {
+              "status": "passed",
+              "duration": 4186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User is able to view the validation for Emails don't match.",
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-signup-functionality-for-gush-webapp.;verfiy-new-user-signup",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verfiy new user signup",
+        "tags": [
+          {
+            "name": "@ActivateSegment",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 27
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "the user open signup page",
+            "result": {
+              "status": "passed",
+              "duration": 654000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "country",
+                      "",
+                      "Firstname",
+                      "Surname",
+                      "",
+                      "Email",
+                      "",
+                      "confirm_email",
+                      "",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "United Kingdom",
+                      "",
+                      "test",
+                      "test1111",
+                      "",
+                      "newUser@gmail.com",
+                      "",
+                      "newUser@gmail.com",
+                      "",
+                      "14FollowUp!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 30,
+            "name": "the user type all mention fields",
+            "result": {
+              "status": "passed",
+              "duration": 4001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "User is able to view first name \"test\" should be shown on homepage header",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-signup-functionality-for-gush-webapp.;verify-upload-profile-picture",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Verify upload profile picture",
+        "tags": [
+          {
+            "name": "@ActivateSegment",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "the user  is on homae page of gush web app",
+            "result": {
+              "status": "passed",
+              "duration": 445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "the user click on upload profile picture box",
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user is able to view newly upload picture",
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

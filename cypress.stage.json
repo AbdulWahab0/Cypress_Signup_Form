@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://app.gush.pro",
+  "experimentalFetchPolyfill": true,
+  "env": {
+    "api_server": "https://svc.gush.pro"
+  },
+  "projectId": "7a6wn5"
+}
